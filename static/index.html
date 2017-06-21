@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Крестики Нолики</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+</head>
+<body>
+
+<div id = "centerBox">
+    <h1>Крестики Нолики</h1>
+
+    <div id = "loginBox" hidden>
+        <p>
+            Придумайте себе логин
+        </p>
+        <p class = "miniText">
+            Логин может состоять только из строчных латинских букв и цифр.<br>
+            К концу вашего логина система припишет уникальный номер.<br>
+            Логин является временным.
+        </p>
+        <form>
+            <p>
+                Логин<br>&nbsp;&nbsp;&nbsp;
+                <input spellcheck = 'false' autocomplete = 'off' class = "textInput" placeholder = "maxim2015" type = "text" id = "loginField" maxlength = "15">
+                <br>
+                <br>
+                <input class = "buttonElement"  type = "button" value = "Далее" id = "loginButton">
+            </p>
+        </form>
+        <br>
+        <p id = "loginMessage"></p>
+    </div>
+
+    <div id = "menuBox" hidden>
+        <p>
+            Ваш логин: <span id = "loginName"></span>
+        </p>
+        <br>
+        <input class = "buttonElement"  type = "button" value = "Создать комнату" id = "createRoomButton">
+        <br>
+        <br>
+        <input class = "buttonElement"  type = "button" value = "Найти комнату" id = "findRoomButton">
+    </div>
+
+    <div id = "gameRoom" hidden>
+        <p id = "gameStatusLabel"></p>
+        <br>
+        <input class = "buttonElement"  type = "button" value = "Удалить комнату" id = "deleteRoomButton">
+        <br>
+        <br>
+        <br>
+        <canvas width = '300' height = '300' id='can' hidden></canvas>
+    </div>
+
+    <div id = "roomsListBox" hidden>
+        <p>Список комнат со свободным местом</p>
+        <p id = "roomsListLabel"></p>
+        <br>
+        <br>
+        <input class = "buttonElement"  type = "button" value = "Вернуться" id = "getBackFromRoomsList">
+    </div>
+
+    <div id = "deletedRoomMessageBox" hidden>
+        <p>Комната была удалена.</p>
+        <br>
+        <input class = "buttonElement"  type = "button" value = "Главное меню" id = "goToMainMenu">
+    </div>
+
+    <br>
+    <br>
+</div>
+
+<script src = "scripts/result.js"></script>
+
+</body>
+</html>

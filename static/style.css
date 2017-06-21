@@ -1,0 +1,55 @@
+body
+{
+    background-color: #40E0D0;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#can
+{
+    position: absolute;
+    cursor: pointer;
+}
+
+#centerBox
+{
+    margin: 0 auto;
+    width: 800px;
+    z-index: 0;
+}
+
+.room
+{
+    width: 550px;
+    background-color: #FFFFFF;
+    padding: 8px 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.miniText
+{
+    font-size: 14px;
+}
+
+.textInput
+{
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    border-width: 1px;
+    width: 250px;
+}
+
+.buttonElement
+{
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    border-width: 1px;
+    width: 200px;
+    padding: 6px 12px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
